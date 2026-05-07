@@ -1,0 +1,37 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Lambda Invocations and Errors",
+        "region": "us-east-1",
+        "metrics": [
+          ["AWS/Lambda", "Invocations", "FunctionName", "RagApiFunction"],
+          [".", "Errors", ".", "."]
+        ],
+        "view": "timeSeries",
+        "stacked": false
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Lambda Duration p95",
+        "region": "us-east-1",
+        "metrics": [
+          ["AWS/Lambda", "Duration", "FunctionName", "RagApiFunction", {"stat": "p95"}]
+        ],
+        "view": "timeSeries",
+        "stacked": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+OMKAR BINAGE
+Python Developer  |  AI & Machine Learning  |  Data Analytics  |  Cloud-Native Backends
+Pune, Maharashtra  |  +91-7666073965  |  omkarbinage0@gmail.com  |  linkedin.com/in/omkarbinage  |  github.com/omkarbinage
+PROFESSIONAL SUMMARY
+Python Developer and AI/ML Engineer with production experience building scalable backend APIs and data pipelines serving 10K+ users. Proficient in Python, FastAPI/Flask, PyTorch, TensorFlow, and scikit-learn for machine learning workflows. Experienced in data analytics with Pandas, NumPy, and SQL, and in deploying AI-powered services on AWS with Docker and Kubernetes. Combines strong software engineering discipline — 25% latency reduction, 30% faster deployments — with a passion for building intelligent, data-driven systems using modern LLM and MLOps tooling.
+TECHNICAL SKILLS
+Languages	Python (3.x), SQL (PostgreSQL, MySQL), JavaScript, TypeScript, Java, Ruby, C++
+AI / ML	PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, LangChain, OpenAI API, RAG pipelines, Fine-tuning LLMs
+Data & Analytics	Pandas, NumPy, Matplotlib, Seaborn, Plotly, Apache Spark (basics), Jupyter Notebooks, ETL pipelines
+Backend / APIs	FastAPI, Flask, Django REST Framework, Node.js/Express, RESTful APIs, WebSockets, Celery task queues
+Cloud & MLOps	AWS (SageMaker, S3, EC2, Lambda), Docker, Kubernetes, GitHub Actions CI/CD, MLflow, DVC, Weights & Biases
+Databases	PostgreSQL, MongoDB, Redis, Pinecone / Weaviate (vector DBs), query optimization, connection pooling
+Observability	Grafana, Prometheus, structured logging, alerting pipelines, model performance monitoring
+CS Fundamentals	Data Structures & Algorithms, System Design, OOP, Distributed Systems, Statistical Modeling
+PROFESSIONAL EXPERIENCE
+Software Engineer – Trainee  |  Roxiler Systems  |  Pune, Maharashtra   Nov 2024 – Present
+•	Engineered scalable backend microservices powering 10K+ active users, processing 1,000+ daily API requests; leveraged Python scripting for data transformation and automation tasks with zero SLA breaches in first 3 months.
+•	Reduced API response latency by 25% by profiling slow endpoints, implementing Redis caching layers, database query optimization, and connection pooling — delivering measurable improvements in user-perceived performance.
+•	Automated full deployment pipeline with GitHub Actions CI/CD and Docker, shrinking release cycles by 30% and enabling consistent, repeatable deployments across staging and production environments.
+•	Drove a 15% reduction in production incidents through systematic unit/integration test coverage, structured code-review checklists, and refactoring of legacy data-processing modules.
+•	Built real-time observability dashboards with Grafana & Prometheus; implemented structured logging and alerting pipelines for proactive detection of performance regressions and data pipeline failures.
+Full Stack Developer – Intern  |  HackVeda Pvt. Ltd.  |  Remote   Jan 2025 – May 2025
+•	Integrated 5+ RESTful APIs using Python/Node.js with MongoDB, establishing reusable data-access patterns and reducing future integration effort across the engineering team.
+•	Shipped 10+ responsive React UI components across 3 client projects, connecting to Python backend services and reducing front-end rework requests by ~40%.
+•	Diagnosed and resolved 15+ API integration and cross-browser bugs, contributing to two on-schedule external client product launches with measurably lower defect rates.
+ENGINEERING PROJECTS
+RAG-Powered Document Q&A System  |  Python · LangChain · OpenAI API · FastAPI · Pinecone · Docker  |  2025
+•	Built an end-to-end Retrieval-Augmented Generation (RAG) pipeline using LangChain and OpenAI GPT-4 API enabling semantic search and Q&A over private document corpora.
+•	Integrated Pinecone vector database for high-speed similarity search across 100K+ document embeddings, achieving sub-500 ms query response times.
+•	Deployed the FastAPI-based inference service on AWS Lambda with Docker, implementing streaming response output and conversation memory for multi-turn interactions.
+•	Achieved 87% answer relevance score on internal evaluation benchmark using cosine similarity and human-in-the-loop validation.
+Sales Forecasting & Analytics Dashboard  |  Python · scikit-learn · Pandas · Plotly Dash · PostgreSQL  |  2024
+•	Designed an end-to-end ML pipeline using scikit-learn (XGBoost, Random Forest) for sales forecasting, achieving 91% prediction accuracy on holdout test data.
+•	Built automated ETL pipelines with Pandas and SQLAlchemy ingesting 500K+ daily records from PostgreSQL, performing feature engineering and data cleaning.
+•	Developed an interactive Plotly Dash analytics dashboard visualizing KPIs, trend analysis, and model predictions for non-technical stakeholders.
+•	Implemented MLflow for experiment tracking, model versioning, and reproducibility across 50+ training runs.
+Delivio — Centralised Delivery Network  |  Python · FastAPI · PostgreSQL · Redis · Docker  |  2024
+•	Architected a distributed logistics platform with Python FastAPI microservices orchestrating 100+ concurrent delivery operations, with Redis pub/sub for real-time dispatch events.
+•	Improved route-assignment efficiency by 20% via a Python-based SLA-weighted dispatch algorithm using dynamic programming for time-window constraint optimization.
+•	Built automated billing pipelines with idempotent invoice generation using Celery async tasks and PostgreSQL, eliminating manual reconciliation.
+Sentiment Analysis API  |  Python · PyTorch · Hugging Face Transformers · FastAPI · Docker  |  2024
+•	Fine-tuned a BERT-based model on a domain-specific dataset using Hugging Face Transformers achieving 93% F1-score on the sentiment classification task.
+•	Wrapped the model in a FastAPI inference service with async endpoints, batching support, and Prometheus metrics for latency and throughput monitoring.
+•	Containerized with Docker and deployed on AWS EC2 with auto-scaling; integrated GitHub Actions for automated model retraining triggers.
+EDUCATION
+B.Tech in Computer Engineering  |  Vishwakarma Institute of Information Technology, Pune  |  2021 – 2025  |  CGPA: 8.36 / 10
+CERTIFICATIONS
+•	AWS Academy Graduate Certification — Amazon Web Services
+•	IBM DevOps and Software Engineering Professional Certificate
+•	CCNAv7: Introduction to Networks — Cisco Networking Academy
+•	Introduction to Cybersecurity — Cisco Networking Academy

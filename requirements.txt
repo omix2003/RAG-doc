@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+langchain
+langchain-text-splitters
+langchain-openai
+langchain-pinecone
+langchain-community
+pinecone
+docx2txt
+pypdf
+python-dotenv
+pydantic-settings
+httpx
+tiktoken
+mangum
+orjson
+pytest

@@ -1,0 +1,81 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: RAG Document Q&A Lambda deployment
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 1024
+    Tracing: Active
+    Environment:
+      Variables:
+        APP_API_KEY: !Ref AppApiKey
+        RATE_LIMIT_REQUESTS: !Ref RateLimitRequests
+        RATE_LIMIT_WINDOW_SECONDS: !Ref RateLimitWindowSeconds
+        MEMORY_DB_PATH: /tmp/memory.db
+        OPENAI_API_KEY: !Ref OpenAIApiKey
+        OPENAI_MODEL: !Ref OpenAIModel
+        OPENAI_EMBED_MODEL: !Ref OpenAIEmbedModel
+        PINECONE_API_KEY: !Ref PineconeApiKey
+        PINECONE_INDEX_NAME: !Ref PineconeIndexName
+        PINECONE_NAMESPACE: !Ref PineconeNamespace
+        PINECONE_CLOUD: !Ref PineconeCloud
+        PINECONE_REGION: !Ref PineconeRegion
+
+Parameters:
+  AppApiKey:
+    Type: String
+    NoEcho: true
+  RateLimitRequests:
+    Type: Number
+    Default: 60
+  RateLimitWindowSeconds:
+    Type: Number
+    Default: 60
+  OpenAIApiKey:
+    Type: String
+    NoEcho: true
+  OpenAIModel:
+    Type: String
+    Default: gpt-4o-mini
+  OpenAIEmbedModel:
+    Type: String
+    Default: text-embedding-3-small
+  PineconeApiKey:
+    Type: String
+    NoEcho: true
+  PineconeIndexName:
+    Type: String
+    Default: rag-doc-qa
+  PineconeNamespace:
+    Type: String
+    Default: default
+  PineconeCloud:
+    Type: String
+    Default: aws
+  PineconeRegion:
+    Type: String
+    Default: us-east-1
+
+Resources:
+  RagApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      Events:
+        ApiEvent:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+      Policies:
+        - AWSLambdaBasicExecutionRole
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: .
+      DockerTag: latest
+
+Outputs:
+  ApiUrl:
+    Description: HTTP API endpoint
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
