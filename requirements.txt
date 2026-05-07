@@ -1,5 +1,7 @@
 fastapi
+python-multipart
 uvicorn[standard]
+numpy==1.26.4
 langchain
 langchain-text-splitters
 langchain-openai
@@ -11,7 +13,7 @@ pypdf
 python-dotenv
 pydantic-settings
 httpx
-tiktoken
+tiktoken==0.7.0
 mangum
 orjson
 pytest

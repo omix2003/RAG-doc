@@ -1,9 +1,10 @@
-FROM public.ecr.aws/lambda/python:3.11
+FROM python:3.11-slim
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel \
+    && pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app
 COPY scripts ./scripts
 
-CMD ["app.main.handler"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
