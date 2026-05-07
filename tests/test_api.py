@@ -28,6 +28,16 @@ class FakeRAGService:
 
         return gen(), ["docs/resume.txt"]
 
+    def answer(
+        self,
+        query: str,
+        session_id: str,
+        top_k=None,
+        source_filters=None,
+        history=None,
+    ):
+        return "hello world", ["docs/resume.txt"]
+
 
 client = TestClient(app)
 
